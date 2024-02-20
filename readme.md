@@ -248,3 +248,47 @@ int main(){
     return 0;
 }
 ```
+
+#### Arquivo baseexpoente.c
+
+```c
+#include<stdio.h>
+
+int main(){
+    float base,exp,i,b;
+    printf("Digite um número da base:\n");
+    scanf("%f",&base);
+
+    printf("Digite um número do expoente:\n");
+    scanf("%f",&exp);
+
+    b = base;
+
+    for(int i = 1; i < exp; i++){
+        /*base *= b;*/
+        base = base * b;
+    }
+
+    printf("%2.2f\n",base);
+
+    return 0;
+}
+```
+#### Arquivo colecao1.c
+```c
+// Array é um conjunto de dados sobre um determinado
+// assunto. Podemos falar de valores numéricos, texto,
+// datas, ou objetos
+#include <stdio.h>
+
+int main(){
+    int valores[5] = {10,5,8,12,7};
+    printf("%d\n",valores[3]);
+
+    return 0;
+}
+```
+#### Arquivo colecao2.c
+```c
+
+```
